@@ -1,6 +1,7 @@
 import cv2
 import numpy as np
 import imutils
+from tensorflow.keras.models import load_model
 
 input_file_address = "sample_sudoku.jpg"
 
@@ -59,9 +60,10 @@ for row_index,row in enumerate(rows):
     cols = np.vsplit(row,9)
     for col_index,col in enumerate(cols):
         cv2.imshow("box",col)
-        cv2.waitKey()
+        cv2.waitKey(20)
         boxes[row_index].append(col)
 
 
 
 
+model=load_model('model-OCR.h5')
