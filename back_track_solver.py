@@ -4,7 +4,7 @@ class Table:
     
     def __str__(self) -> str:
         output = ""
-        horizontal_line = "_"*(2+len(self.table[1]))*2+"\n"
+        horizontal_line = "-"*(2+len(self.table[1]))*2+"\n"
         for i in range(len(self.table)):
             if i%3==0:
                 output+= horizontal_line
@@ -115,25 +115,26 @@ def back_track_solver(table: Table):
 
 
     
+if __name__ =="__main__":
 
+    table=[
+        [8,0,0 ,0,1,0, 0,0,9],
+        [0,5,0 ,8,0,7, 0,1,0],
+        [0,0,4 ,0,9,0, 7,0,0],
+    
+        [0,6,0 ,7,0,1, 0,2,0],
+        [5,0,8 ,0,6,0, 1,0,7],
+        [0,1,0 ,5,0,2, 0,9,0],
+    
+        [0,0,7 ,0,4,0, 6,0,0],
+        [0,8,0 ,3,0,9, 0,4,0],
+        [3,0,0 ,0,5,0, 0,0,8],
+    ]
 
-table=[
-    [8,0,0 ,0,1,0, 0,0,9],
-    [0,5,0 ,8,0,7, 0,1,0],
-    [0,0,4 ,0,9,0, 7,0,0],
- 
-    [0,6,0 ,7,0,1, 0,2,0],
-    [5,0,8 ,0,6,0, 1,0,7],
-    [0,1,0 ,5,0,2, 0,9,0],
- 
-    [0,0,7 ,0,4,0, 6,0,0],
-    [0,8,0 ,3,0,9, 0,4,0],
-    [3,0,0 ,0,5,0, 0,0,8],
-]
-
-# print(back_track_solver(table))
-t = Table(table)
-print(t.table_is_valid())
-print(t)
-back_track_solver(t)
-print(t)
+    # print(back_track_solver(table))
+    t = Table(table)
+    breakpoint()
+    print(t.table_is_valid())
+    print(t)
+    back_track_solver(t)
+    print(t)

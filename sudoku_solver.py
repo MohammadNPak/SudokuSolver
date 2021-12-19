@@ -1,7 +1,6 @@
 import cv2
 import numpy as np
 import imutils
-from tensorflow.keras.models import load_model
 
 input_file_address = "sample_sudoku.jpg"
 
@@ -52,18 +51,40 @@ result = cv2.warpPerspective(sudoku,transform_matrix,(height,width))
 cv2.imshow("result",result) 
 cv2.waitKey()
 
+result = cv2.warpPerspective(noise_canceled,transform_matrix,(height,width))
+cv2.imshow("result",result) 
+cv2.waitKey()
 
 boxes=[]
-rows = np.hsplit(result,9)
+rows = np.vsplit(result,9)
 for row_index,row in enumerate(rows):
     boxes.append([])
-    cols = np.vsplit(row,9)
+    cols = np.hsplit(row,9)
     for col_index,col in enumerate(cols):
-        cv2.imshow("box",col)
-        cv2.waitKey(20)
-        boxes[row_index].append(col)
+        cv2.imshow("box",col[5:-5,5:-5])
+        cv2.waitKey()
+        boxes[row_index].append(col[5:-5,5:-5])
 
 
 
+import easyocr
+reader = easyocr.Reader(['ch_sim','en'])
 
-model=load_model('model-OCR.h5')
+digits = []
+for i in range(len(boxes)):
+    digits.append([])
+    for j in range(len(boxes[0])):
+        result =reader.readtext(np.asarray(boxes[i][j],dtype=np.uint8))
+        digits[i].append(result)
+        print(result)
+
+# result =reader.readtext(np.asarray(result,dtype=np.uint8))
+# for i in result:
+#     print(i)
+
+d = [[int(y[0][-2]) if len(y)>0 else 0 for y in x] for x in digits]
+
+from back_track_solver import Table
+
+t = Table(d)
+print(t)
