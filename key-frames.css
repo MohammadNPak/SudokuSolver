@@ -1,0 +1,91 @@
+
+            @keyframes digit1 {
+            from {
+                opacity: 0;
+            }
+            to {
+                transform: translate(35.35533905932738px, -0.0px));
+                /* transform: translate(calc(var(--distance)*1.4142135623730951)px, calc(var(--distance)*-0.0)px); */
+                /* transform: translate(cos(2*pi/16)*(width/2*sqrt(2))px, sin(2*pi/16)*(width/2*sqrt(2))px); */
+            }
+            }
+            @keyframes digit1 {
+            from {
+                opacity: 0;
+            }
+            to {
+                transform: translate(34.67599613305369px, -6.897484482073575px));
+                /* transform: translate(calc(var(--distance)*1.4142135623730951)px, calc(var(--distance)*-0.0)px); */
+                /* transform: translate(cos(2*pi/16)*(width/2*sqrt(2))px, sin(2*pi/16)*(width/2*sqrt(2))px); */
+            }
+            }
+            @keyframes digit1 {
+            from {
+                opacity: 0;
+            }
+            to {
+                transform: translate(32.664074121909415px, -13.529902503654926px));
+                /* transform: translate(calc(var(--distance)*1.4142135623730951)px, calc(var(--distance)*-0.0)px); */
+                /* transform: translate(cos(2*pi/16)*(width/2*sqrt(2))px, sin(2*pi/16)*(width/2*sqrt(2))px); */
+            }
+            }
+            @keyframes digit1 {
+            from {
+                opacity: 0;
+            }
+            to {
+                transform: translate(29.39689006048397px, -19.642373959677553px));
+                /* transform: translate(calc(var(--distance)*1.4142135623730951)px, calc(var(--distance)*-0.0)px); */
+                /* transform: translate(cos(2*pi/16)*(width/2*sqrt(2))px, sin(2*pi/16)*(width/2*sqrt(2))px); */
+            }
+            }
+            @keyframes digit1 {
+            from {
+                opacity: 0;
+            }
+            to {
+                transform: translate(25.000000000000004px, -25.000000000000004px));
+                /* transform: translate(calc(var(--distance)*1.4142135623730951)px, calc(var(--distance)*-0.0)px); */
+                /* transform: translate(cos(2*pi/16)*(width/2*sqrt(2))px, sin(2*pi/16)*(width/2*sqrt(2))px); */
+            }
+            }
+            @keyframes digit1 {
+            from {
+                opacity: 0;
+            }
+            to {
+                transform: translate(19.642373959677556px, -29.39689006048397px));
+                /* transform: translate(calc(var(--distance)*1.4142135623730951)px, calc(var(--distance)*-0.0)px); */
+                /* transform: translate(cos(2*pi/16)*(width/2*sqrt(2))px, sin(2*pi/16)*(width/2*sqrt(2))px); */
+            }
+            }
+            @keyframes digit1 {
+            from {
+                opacity: 0;
+            }
+            to {
+                transform: translate(13.529902503654927px, -32.664074121909415px));
+                /* transform: translate(calc(var(--distance)*1.4142135623730951)px, calc(var(--distance)*-0.0)px); */
+                /* transform: translate(cos(2*pi/16)*(width/2*sqrt(2))px, sin(2*pi/16)*(width/2*sqrt(2))px); */
+            }
+            }
+            @keyframes digit1 {
+            from {
+                opacity: 0;
+            }
+            to {
+                transform: translate(6.897484482073578px, -34.67599613305369px));
+                /* transform: translate(calc(var(--distance)*1.4142135623730951)px, calc(var(--distance)*-0.0)px); */
+                /* transform: translate(cos(2*pi/16)*(width/2*sqrt(2))px, sin(2*pi/16)*(width/2*sqrt(2))px); */
+            }
+            }
+            @keyframes digit1 {
+            from {
+                opacity: 0;
+            }
+            to {
+                transform: translate(2.164890140588733e-15px, -35.35533905932738px));
+                /* transform: translate(calc(var(--distance)*1.4142135623730951)px, calc(var(--distance)*-0.0)px); */
+                /* transform: translate(cos(2*pi/16)*(width/2*sqrt(2))px, sin(2*pi/16)*(width/2*sqrt(2))px); */
+            }
+            }
